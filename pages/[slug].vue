@@ -1,9 +1,13 @@
 <template>
     <div>
         <p>Page details for {{ slug }}</p>
-         <p>{{ state.first_name }}</p>
-         <p>{{ page }}</p>
         
+         
+         <h1>{{ page.Title }}</h1>
+
+         <div v-html="page.pageContent"></div>
+
+        <p>{{ page.keywords }}</p>
 
          
     </div>
